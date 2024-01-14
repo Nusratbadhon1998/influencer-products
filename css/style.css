@@ -7,6 +7,7 @@
     --btn-text-color: white;
     --bold: 700;
     --semi-bold: 600;
+    --card-title-color: #18191F;
 }
 
 * {
@@ -39,9 +40,9 @@
 }
 
 .container {
-    width: 80%;
+    width: 65%;
 
-    max-width: 1440;
+    max-width: 1280px;
     margin: 40px auto;
 }
 
@@ -155,16 +156,49 @@ hr {
     height: 100%;
 }
 
+/* Photo album card */
+.photo-card h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: var(--semi-bold);
+}
+
+.card-container {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+
+.card {
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+}
+
+.card .star {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.card-container .card .card-title {
+
+    color: var(--card-title-color);
+    font-size: 2.2rem;
+    font-weight: var(--semi-bold);
+}
 
 
 
-
-
-
-
-
-
-
+.card-btn{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
 
 
 
@@ -258,9 +292,18 @@ hr {
 
     }
 
-/* ******************************************** */
+    /* ******************************************** */
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.card-btn{
+    flex-direction: column;
+    justify-content: flex-end;
+}
 
-
+.card-btn .primary-btn{
+margin-right: 0px;}
 
 
 
